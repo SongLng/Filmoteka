@@ -1,10 +1,16 @@
 .header__home {
-  background-image: radial-gradient(rgba(0, 0, 0, 0.56)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
     url('../images/banner_movie.png');
   background-size: cover;
+  background-repeat: no-repeat;
+  @media screen and (min-width: 767px) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
+      url('../images/banner_movie-tablet.png');
+  }
 
   @media screen and (min-width: 1023px) {
-    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0, 0, 0, 0.56)),
+      url('../images/banner_movie-desktop.png');
   }
 }
 
@@ -16,6 +22,9 @@ nav {
 
 .nav__home {
   height: 24px;
+  @media screen and(min-width:767px) {
+    height: auto;
+  }
   &--name {
     @media screen and (min-width: 320px) {
       display: none;
@@ -25,6 +34,11 @@ nav {
       display: inline;
       color: aliceblue;
     }
+  }
+  &--name {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.16;
   }
 }
 
@@ -55,14 +69,19 @@ nav {
 
 .input {
   position: relative;
+  margin-top: 56px;
   @media screen and (min-width: 767px) {
     display: block;
     width: 337px;
-    margin: auto;
+    margin: auto auto;
+    margin-top: 38px;
   }
 }
 
 .input__search {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
   position: relative;
   background-color: transparent;
   outline: none;
@@ -89,7 +108,17 @@ nav {
 }
 
 .attention {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 0px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.14;
   color: rgba(255, 0, 27, 1);
+  @media screen and (min-width: 767px) {
+    margin-top: 20px;
+  }
 }
 
 .library {
