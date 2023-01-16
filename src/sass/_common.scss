@@ -1,1 +1,17 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+main {
+  margin: auto;
+}
+section {
+  @media screen and (min-width: 320px) {
+    height: 230px;
+    padding: 44px 20px;
+  }
+  @media screen and (min-width: 767px) {
+    height: 215px;
+    padding: 40px 32px 44px 32px;
+  }
+  @media screen and (min-width: 1023px) {
+    height: 216px;
+  }
+}
