@@ -1,0 +1,30 @@
+footer {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(247, 247, 247, 1);
+  color: rgba(84, 84, 84, 1);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+
+  @media screen and (min-width: 320px) {
+    padding: 28px 20px 29px 20px;
+    height: 100px;
+  }
+  @media screen and (min-width: 767px) {
+    padding: 30px 143px 30px 143px;
+    height: 79px;
+  }
+  @media screen and (min-width: 1023px) {
+    padding: 30px 271px 28px 271px;
+    height: 77px;
+  }
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

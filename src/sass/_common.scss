@@ -2,18 +2,36 @@
 main {
   margin: auto;
 }
-section {
-  @media screen and (min-width: 320px) {
-    height: 230px;
-    padding: 40px 20px 44px 20px;
+.section__wrapper {
+  &--header {
+    @media screen and (min-width: 320px) {
+      height: 230px;
+      padding: 40px 20px 44px 20px;
+    }
+    @media screen and (min-width: 767px) {
+      height: 215px;
+      padding: 45px 32px 44px 32px;
+    }
+    @media screen and (min-width: 1023px) {
+      height: 216px;
+    }
   }
-  @media screen and (min-width: 767px) {
-    height: 215px;
-    padding: 45px 32px 44px 32px;
+  &--main {
+    @media screen and (min-width: 320px) {
+      padding: 20px 20px 40px 20px;
+    }
+    @media screen and (min-width: 767px) {
+      height: 215px;
+      padding: 45px 32px 44px 32px;
+    }
+    @media screen and (min-width: 1023px) {
+      height: 216px;
+    }
   }
-  @media screen and (min-width: 1023px) {
-    height: 216px;
-  }
+}
+
+p {
+  margin: 0;
 }
 
 .visually-hidden {
