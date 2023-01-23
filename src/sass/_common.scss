@@ -30,6 +30,21 @@ main {
       padding: 60px 32px 60px 32px;
     }
   }
+  &--pagination {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    @media screen and (min-width: 320px) {
+      padding: 0px 20px 40px 20px;
+      height: auto;
+    }
+    @media screen and (min-width: 767px) {
+      padding: 0px 32px 44px 32px;
+    }
+    @media screen and (min-width: 1023px) {
+      padding: 0px 32px 60px 32px;
+    }
+  }
 }
 
 p {

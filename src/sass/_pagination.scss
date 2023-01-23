@@ -1,0 +1,40 @@
+.pagination__container {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.btn__left,
+.btn__right {
+  background-color: rgba(247, 247, 247, 1);
+  color: rgba(0, 0, 0, 1);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn__img {
+  width: 16px;
+}
+
+.btn__active {
+  background-color: rgba(255, 107, 8, 1);
+  border-radius: 5px;
+  color: white;
+}
