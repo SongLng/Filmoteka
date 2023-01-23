@@ -1,6 +1,9 @@
 .card__list {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   @media screen and (min-width: 767px) {
     // min-width: 767px;
     display: flex;
@@ -25,7 +28,7 @@
       margin-bottom: 0px;
     }
 
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: 767px) and (max-width: 1023px) {
       margin-right: 32px;
       margin-bottom: 32px;
       &:nth-child(even) {
@@ -40,13 +43,13 @@
       margin-right: 16px;
       width: 309px;
       margin-right: 20px;
-      //   &:nth-child(odd) {
-      //     margin-right: 0px;
-      //   }
-      //   &:last-child {
-      //     margin-bottom: 0px;
-      //     margin-right: 0px;
-      //   }
+      &:nth-child(3n) {
+        margin-right: 0px;
+      }
+      &:last-child {
+        margin-bottom: 0px;
+        margin-right: 0px;
+      }
     }
   }
 }
