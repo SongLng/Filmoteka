@@ -41,11 +41,16 @@ fetchTrending();
 function renderTrending(trends) {
   const markup = trends
     .map(trend => {
+      const { original_title, genre_ids, release_date } = trend;
       return ` <li class="card__list--item">
     <div class="card__wrapper">
-      <img class="card__img" src="${trend.poster_path}" alt="poster" />
-      <h3 class="card__title">${trend.original_title}</h3>
-      <p class="card__genre"><span>${trend.genere_ids}</span> | <span>${trend.release_date}</span></p>
+      <img class="card__img" src="https://image.tmdb.org/t/p/original/${
+        trend.poster_path
+      }" alt="poster" />
+      <h3 class="card__title">${original_title}</h3>
+      <p class="card__genre"><span>${genre_ids.join(
+        ' '
+      )}</span> | <span>${release_date}</span></p>
     </div>
   </li>`;
     })
