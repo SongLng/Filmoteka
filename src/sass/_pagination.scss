@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: row;
 }
-.btn {
+.numb {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,6 +17,11 @@
   width: 40px;
   height: 40px;
   cursor: pointer;
+  border-radius: 5px;
+  &:hover {
+    background-color: rgba(255, 107, 8, 1);
+    color: white;
+  }
 }
 
 .btn__left,
@@ -30,6 +35,10 @@
   align-items: center;
   border-radius: 5px;
   cursor: pointer;
+  &:hover {
+    background-color: rgba(255, 107, 8, 1);
+    color: white;
+  }
 }
 
 .btn__img {
