@@ -43,11 +43,11 @@ function elem(allPages, page) {
     span.innerHTML = ` ${pageLength}`;
     li.appendChild(span);
     li.addEventListener('click', () => {
-      if (pageLength === pageNumber) {
-        li.classList.add('btn__active');
-        fetchTrending((pageNumber = pageLength));
-      } else {
+      fetchTrending((pageNumber = pageLength));
+      if (page == pageLength) {
         li.classList.remove('btn__active');
+      } else {
+        li.classList.add('btn__active');
       }
     });
 
