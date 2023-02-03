@@ -82,6 +82,7 @@ nav {
 .input {
   position: relative;
   margin-top: 56px;
+
   @media screen and (min-width: 767px) {
     display: block;
     width: 337px;
@@ -102,6 +103,7 @@ nav {
   border-right: none;
   border-bottom: 0.5 solid white;
   width: 100%;
+  color: white;
   @media screen and (min-width: 767px) {
     width: 336px;
   }

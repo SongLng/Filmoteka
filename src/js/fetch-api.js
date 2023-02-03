@@ -21,4 +21,17 @@ export function fetchTrending(pageNumber = 1) {
 
 fetchTrending();
 
-// const ul = document.querySelector('.pagination__list');
+export function fetchByName(name) {
+  fetch(
+    `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&language=en-US&page=1&include_adult=false&query=${name}`
+  )
+    .then(res => {
+      if (!res.ok) {
+        throw new Error(res.status);
+      }
+      return res.json();
+    })
+    .then(data => renderTrending(data.results))
+    .then(data => console.log(data))
+    .catch(error => console.log(error));
+}
